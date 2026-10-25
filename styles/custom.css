@@ -1,0 +1,76 @@
+:root { color-scheme: dark; }
+
+/* Fix bottom chat input background */
+[data-testid="stBottom"],
+[data-testid="stBottom"] > div,
+[data-testid="stChatInput"],
+.stChatFloatingInputContainer {
+    background-color: #080d19 !important;
+}
+
+/* Fix chat input box */
+[data-testid="stChatInput"] > div {
+    background-color: #111c30 !important;
+    border: 1px solid #344766 !important;
+    border-radius: 14px !important;
+}
+
+/* Fix input text and placeholder */
+[data-testid="stChatInput"] textarea {
+    background-color: #111c30 !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    caret-color: #ffffff !important;
+}
+
+[data-testid="stChatInput"] textarea::placeholder {
+    color: #94a3b8 !important;
+    -webkit-text-fill-color: #94a3b8 !important;
+}
+
+/* Fix send button */
+[data-testid="stChatInput"] button {
+    color: #a5b4fc !important;
+    background-color: #1e293b !important;
+    border-radius: 10px !important;
+}
+
+/* Remove white bottom area */
+[data-testid="stBottomBlockContainer"] {
+    background-color: #080d19 !important;
+}
+
+html, body, [data-testid="stApp"], [data-testid="stMain"], .stApp { background: #090e1a !important; color: #edf2ff !important; }
+[data-testid="stHeader"] { background: transparent !important; }
+[data-testid="stSidebar"] { background: #0e1525 !important; border-right: 1px solid #263149; }
+[data-testid="stSidebar"] * { color: #dbe5fa; }
+.block-container { max-width: 1100px; padding-top: 2.8rem; padding-bottom: 7rem; }
+h1, h2, h3, h4, p, label { color: #edf2ff !important; }
+.stCaption, [data-testid="stCaptionContainer"] { color: #a4b2ce !important; }
+.stButton > button[kind="primary"], [data-testid="stFormSubmitButton"] button { background: linear-gradient(105deg, #7266ff, #3d9bea) !important; color: white !important; border: 0 !important; box-shadow: 0 8px 24px #5159d733; }
+.stButton button, [data-testid="stFormSubmitButton"] button { border-radius: 12px !important; transition: transform .15s ease, box-shadow .15s ease; }
+.stButton button:hover, [data-testid="stFormSubmitButton"] button:hover { transform: translateY(-1px); box-shadow: 0 8px 20px #596ce044; }
+[data-testid="stFileUploader"], [data-testid="stVerticalBlockBorderWrapper"] > div { border-color: #2b3854 !important; border-radius: 18px !important; }
+[data-testid="stFileUploaderDropzone"] { background: #111c31 !important; border: 1px dashed #6376a4 !important; border-radius: 14px !important; }
+[data-testid="stFileUploaderDropzone"] * { color: #dce5f7 !important; }
+input, textarea, [data-baseweb="select"] > div { background: #121e32 !important; color: #f4f6ff !important; border-color: #364766 !important; border-radius: 10px !important; }
+[data-testid="stChatMessage"] { background: #101a2d !important; border: 1px solid #283651; border-radius: 16px !important; margin-bottom: 12px; }
+[data-testid="stChatInput"] { background: #101a2d !important; border-radius: 16px !important; border: 1px solid #364766; }
+[data-testid="stChatInput"] textarea { color: #f4f6ff !important; }
+.sidebar-brand { font-size: 1.6rem; font-weight: 850; letter-spacing: .08em; padding: 10px 0 22px; }
+.sidebar-brand span, .login-brand span, .dashboard-title span, .login-title span { color: #9d96ff; }
+.sidebar-brand small { display: block; font-size: .64rem; color: #8a9bbd; letter-spacing: .18em; margin-top: 3px; }
+.eyebrow, .login-eyebrow { font-size: .74rem; color: #9b9dff; font-weight: 750; letter-spacing: .19em; margin: 20px 0 10px; }
+.dashboard-title { font-size: clamp(2.1rem, 4vw, 3.6rem); font-weight: 850; letter-spacing: -.055em; line-height: 1.12; margin-bottom: 10px; }
+.dashboard-subtitle { color: #aebcda !important; font-size: 1.08rem; margin-bottom: 28px; }
+.login-shell { text-align: center; }
+.login-brand { font-size: 1.8rem; font-weight: 900; letter-spacing: .12em; padding-top: 4vh; }
+.login-eyebrow { margin-top: 35px; }
+.login-title { font-size: clamp(2.6rem, 5vw, 5rem); max-width: 850px; line-height: 1.1; letter-spacing: -.06em; margin: 16px auto; }
+.login-subtitle { max-width: 580px; margin: 16px auto 25px; font-size: 1.08rem; color: #aebcda !important; }
+.feature-row { color: #b9c8eb; margin: 20px auto 40px; font-size: .87rem; }
+.empty-state { text-align: center; padding: 45px 15px; margin-top: 25px; background: radial-gradient(ellipse at top, #242357, #101829 65%); border: 1px solid #293756; border-radius: 22px; }
+.empty-state h3 { margin: 8px 0; }
+.empty-state p { color: #a9b9d5 !important; }
+.empty-icon { font-size: 3rem; color: #a59aff; }
+@media (max-width: 700px) { .block-container { padding-top: 1.5rem; } .login-title { font-size: 2.6rem; } .feature-row { line-height: 1.9; } }
